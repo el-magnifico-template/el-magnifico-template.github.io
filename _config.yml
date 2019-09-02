@@ -5,4 +5,4 @@ theme: jekyll-theme-tactile
 collections:
   facefeed:
     output: true
-    permalink: /facefeed/:name
+    permalink: /:name
