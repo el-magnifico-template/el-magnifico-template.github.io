@@ -1,134 +1,161 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Google Sheets API Quickstart</title>
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <p>Google Sheets API Quickstart</p>
+<head>
+  <title>Google login example</title>
+  <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <style media="screen">
+    h3 {
+      color:green;
+    }
+  </style>
+</head>
+<body>
+  <button name="button" id="disconnect" style="display:none;">Disconnect</button>
 
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize_button" style="display: none;">Authorize</button>
-    <button id="signout_button" style="display: none;">Sign Out</button>
+  <!-- https://developers.google.com/+/web/signin/?hl=en#button_attributes -->
+  <div id="gConnect">
+    <button class="g-signin"
+        data-clientid="172255486344-i4pg0d6rr404pgrafqebjie1b24a29nt.apps.googleusercontent.com"
+        data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/contacts.readonly"
+        data-requestvisibleactions="http://schemas.google.com/AddActivity"
+        data-callback="_onSignInCallback"
+        data-theme="dark"
+        data-cookiepolicy="single_host_origin">
+    </button>
+  </div>
 
-    <pre id="content" style="white-space: pre-wrap;"></pre>
+  <h2>
+    Result
+  </h2>
+  <div id="result">
 
-    <script type="text/javascript">
-      // Client ID and API key from the Developer Console
+    <h3>
+      About me from plus API
+    </h3>
+    <div id="me_from_plus">
+    </div>
+
+    <h3>
+      People from plus API
+    </h3>
+    <div id="people_from_plus_api">
+    </div>
+
+    <h3>
+      Contact from contacts API
+    </h3>
+    <div id="contacts_from_contact_api">
+    </div>
+
+  </div>
+
+</body>
+<script type="text/javascript">
+
       var CLIENT_ID = '172255486344-i4pg0d6rr404pgrafqebjie1b24a29nt.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyCILePb5ZsOmSFVCm1uc_Xlf4uBRHekY0g';
 
-      // Array of API discovery doc URLs for APIs used by the quickstart
-      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
-
-      // Authorization scopes required by the API; multiple scopes can be
-      // included, separated by spaces.
-      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
-
-      var authorizeButton = document.getElementById('authorize_button');
-      var signoutButton = document.getElementById('signout_button');
-
-      /**
-       *  On load, called to load the auth2 library and API client library.
-       */
-      function handleClientLoad() {
-        gapi.load('client:auth2', initClient);
-      }
-
-      /**
-       *  Initializes the API client library and sets up sign-in state
-       *  listeners.
-       */
-      function initClient() {
-        gapi.client.init({
-          apiKey: API_KEY,
-          clientId: CLIENT_ID,
-          discoveryDocs: DISCOVERY_DOCS,
-          scope: SCOPES
-        }).then(function () {
-          // Listen for sign-in state changes.
-          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-
-          // Handle the initial sign-in state.
-          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-          authorizeButton.onclick = handleAuthClick;
-          signoutButton.onclick = handleSignoutClick;
-        }, function(error) {
-          appendPre(JSON.stringify(error, null, 2));
-        });
-      }
-
-      /**
-       *  Called when the signed in status changes, to update the UI
-       *  appropriately. After a sign-in, the API is called.
-       */
-      function updateSigninStatus(isSignedIn) {
-        if (isSignedIn) {
-          authorizeButton.style.display = 'none';
-          signoutButton.style.display = 'block';
-          listMajors();
-        } else {
-          authorizeButton.style.display = 'block';
-          signoutButton.style.display = 'none';
+// https://developers.google.com/google-apps/contacts/v3/index#getting_started
+// http://vincentwoo.com/2012/08/15/the-api-for-googles-most-valuable-resource-sucks/
+function disconnect() {
+  $.ajax({
+    type: 'GET',
+    url: 'https://accounts.google.com/o/oauth2/revoke?token=' +
+        gapi.auth.getToken().access_token,
+    async: false,
+    contentType: 'application/json',
+    dataType: 'jsonp',
+    success: function(result) {
+      console.log('revoke response: ' + result);
+      $('#gConnect').show();
+      $('#disconnect').hide();
+      $("#result div").empty();
+    },
+    error: function(e) {
+      console.log(e);
+    }
+  });
+}
+function _onSignInCallback(authResult){
+  gapi.client.load('plus','v1')
+              .then(function() {
+                console.log('authResult', JSON.stringify(authResult));
+                if (authResult['access_token']) {
+                  $('#gConnect').hide();
+                  $('#disconnect').show();
+                  loadSelf();
+                  loadPlusFriends();
+                  loadContacts();
+                } else if (authResult['error']) {
+                  console.error("failed to authentication")
+                }
+              });
+}
+function loadSelf(){
+  gapi.client.plus.people.get({
+    'userId': 'me'
+  }).then(function(res) {
+    var me = res.result;
+    $('#me_from_plus').empty()
+    .append(JSON.stringify(me))
+    .append($('<p><img src=\"' + me.image.url + '\"></p>'))
+  },function(e){
+    console.error("failed to load self",e);
+  });
+}
+function loadPlusFriends(){
+  gapi.client.plus.people.list({
+    'userId': 'me',
+    'collection': 'visible'
+  }).then(function(res) {
+    var people = res.result;
+    $('#people_from_plus_api').empty().append(JSON.stringify(people));
+    for (var personIndex in people.items) {
+      person = people.items[personIndex];
+      $('#people_from_plus_api').append('<img src="' + person.image.url + '">');
+    }
+  },function(err){
+    console.error("failed to load people",e);
+  });
+}
+function loadContacts(){
+  var urls =[];
+  $.ajax({
+    url: 'https://www.google.com/m8/feeds/contacts/default/full?alt=json',
+    dataType: 'jsonp',
+    data: gapi.auth.getToken()
+  }).done(function(data) {
+    $('#contacts_from_contact_api')
+      .empty()
+      .append(JSON.stringify(data.feed));
+    data.feed.entry.forEach(function(e){
+      var pushed = false;
+      e.link.forEach(function(l){
+        if (l.type === "image/*" && !pushed){
+          urls.push(l.href + "?"+ $.param({"access_token":gapi.auth.getToken().access_token, "token_type":gapi.auth.getToken().token_type}));
+          pushed = true;
         }
-      }
-
-      /**
-       *  Sign in the user upon button click.
-       */
-      function handleAuthClick(event) {
-        gapi.auth2.getAuthInstance().signIn();
-      }
-
-      /**
-       *  Sign out the user upon button click.
-       */
-      function handleSignoutClick(event) {
-        gapi.auth2.getAuthInstance().signOut();
-      }
-
-      /**
-       * Append a pre element to the body containing the given message
-       * as its text node. Used to display the results of the API call.
-       *
-       * @param {string} message Text to be placed in pre element.
-       */
-      function appendPre(message) {
-        var pre = document.getElementById('content');
-        var textContent = document.createTextNode(message + '\n');
-        pre.appendChild(textContent);
-      }
-
-      /**
-       * Print the names and majors of students in a sample spreadsheet:
-       * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
-       */
-      function listMajors() {
-        gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms',
-          range: 'Class Data!A2:E',
-        }).then(function(response) {
-          var range = response.result;
-          if (range.values.length > 0) {
-            appendPre('Name, Major:');
-            for (i = 0; i < range.values.length; i++) {
-              var row = range.values[i];
-              // Print columns A and E, which correspond to indices 0 and 4.
-              appendPre(row[0] + ', ' + row[4]);
-            }
-          } else {
-            appendPre('No data found.');
-          }
-        }, function(response) {
-          appendPre('Error: ' + response.result.error.message);
-        });
-      }
-
-    </script>
-
-    <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-  </body>
+      });
+    });
+  function staggerImages(index) {
+    if (index == urls.length) return;
+    var img = new Image();
+    var notFound = false;
+    img.onload = function() {
+      staggerImages(index + 1);
+    };
+    img.onerror = function() {
+      img.src = "404.png"
+    };
+    img.src = urls[index];
+    $('#contacts_from_contact_api').append(img);
+  }
+  staggerImages(0);
+  });
+}
+$(function(){
+  $('#disconnect').on("click", disconnect);
+});
+</script>
 </html>
