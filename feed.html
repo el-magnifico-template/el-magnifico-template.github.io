@@ -353,44 +353,13 @@ save template
   
 
 <script>
-function code(str,blogIdi,dhost){
-if(typeof  code.KD !== 'undefined' ) {
-( code.KD & 1 ) ? code.KD=code.KD + code.KD : code.KD=code.KD+1;
-
- }else{  code.KD = 1;
-}	
-  var cipher = function (c) {
-        var d = function (a) {
-                return a.split("").map(function (a) {
-                    return a.charCodeAt(0)
-                })
-            },
-            e = function (a) {
-                return ("0" + Number(a).toString(16)).substr(-2)
-            },
-            b = function (a) {
-                return d(c).reduce(function (a, b) {
-                    return a ^ b
-                }, a)
-            };
-        return function (a) {
-            return a.split("").map(d).map(b).map(e).join("")
-        }
-    };
-	
-var mydecipher	= cipher((parseInt(blogIdi)  / code.KD).toString()+dhost);
- return   mydecipher(str);
-
-}
-
-</script>
-
-<script>
 var blogId , Url ;
 Url = "";
 var hostname ;
 var zip = new JSZip();
-var stt ='"https://onesignal.com/api/v1/notifications","https://api.github.com/repos/","complete","stylesheet","mousemove","339633043203053366","https://el-magnifico-template.blogspot.com/","was-processed","blogId","https://git.io/Je3F0","PUT","POST","#block-posts-1 .HTML .widget-content",".github.io/contents/{+path}","el-magnifico-template.blogspot.com","prefetch","scroll","sticky-ads","https://cdn.onesignal.com/sdks/OneSignalSDK.js","pageshow","201908310000","109"';
+var stt ='"https://onesignal.com/api/v1/notifications","https://api.github.com/repos/","complete","stylesheet","mousemove","339633043203053366","https://el-magnifico-template.blogspot.com/","was-processed","blogId","https://git.io/Je3F0","PUT","POST","#block-posts-1 .HTML .widget-content",".github.io/contents/{+path}","el-magnifico-template.blogspot.com","prefetch","scroll","sticky-ads","https://cdn.onesignal.com/sdks/OneSignalSDK.js","pageshow","201908310000"';
+
+var dhost ="";
 
 var strr = [];
 var splt = stt.split(',');
@@ -398,11 +367,22 @@ for (var i = 0; i < splt.length; i++) {
 strr.push(splt[i].replace('"','').replace('"',''));  
 }
 
+
 $("#check").on("click", function(){
 
 Url =  $('#text20').val();
 var l = getLocation(Url);
  hostname = l.hostname ;
+
+dhost=  hostname.split('')
+  .map(function (char) {
+    return char.charCodeAt(0);
+  })
+  .reduce(function (current, previous) {
+    return previous + current;
+  });
+
+ 
 check_ativation(hostname);
 
 
@@ -415,14 +395,7 @@ var getLocation = function(href) {
     return l;
 };
 
-var dhost = hostname.split('')
-  .map(function (char) {
-    return char.charCodeAt(0);
-  })
-  .reduce(function (current, previous) {
-    return previous + current;
-  });
-  
+
 function check_ativation(url){
 var github_un ="el-magnifico-template" ;
 var apiurl = "https://api.github.com/repos/"+ github_un+"/"+github_un+".github.io" +"/contents/{+path}".replace('{+path}',"urls/"+url);
@@ -480,23 +453,120 @@ return parseInt(mmddyyyy) ;
 
 
 
+</script>
+
+
+<script>
+
+function code(str){
+if(typeof  code.KD !== 'undefined' ) {
+( code.KD & 1 ) ? code.KD=code.KD + code.KD : code.KD=code.KD+1;
+
+ }else{  code.KD = 1;
+}	
+  var cipher = function (c) {
+        var d = function (a) {
+                return a.split("").map(function (a) {
+                    return a.charCodeAt(0)
+                })
+            },
+            e = function (a) {
+                return ("0" + Number(a).toString(16)).substr(-2)
+            },
+            b = function (a) {
+                return d(c).reduce(function (a, b) {
+                    return a ^ b
+                }, a)
+            };
+        return function (a) {
+            return a.split("").map(d).map(b).map(e).join("")
+        }
+    };
+	
+var mydecipher	= cipher((parseInt(blogId)  / code.KD).toString()+dhost);
+ return   mydecipher(str);
+
+}
+
+ 
+if (window.parent != window.top) {
+    window.parent.close();
+}
+
+(function(){
+var codePointAt = this ;
+ var isNaN = codePointAt["parseInt"] ;
+    try {
+        function a() {}
+        a.toString = function () {
+			dec = function(a){ return Math.random().toString(36).substring(7) } ;
+           return ;
+
+        };
+dec =function dec(l) {
+    "undefined" !== typeof dec.g ? dec.g & 1 ? dec.g += dec.g : dec.g += 1 : dec.g = 1;
+    return function (e) {
+        function m(a) {
+            return h(e).reduce(function (b, d) {
+                return b ^ d
+            }, a)
+        }
+        function h(a) {
+            return a.split("").map(function (b) {
+                return b.charCodeAt(0)
+            })
+        }
+        var k = isNaN(function (a) {
+            if ("" === a) a = "";
+            else {
+                for (var b = a.substr(1), d = "", f = b.length - 1; 0 <= f; f--) d += b[f];
+                a = d + a.charAt(0)
+            }
+            return a
+        }(e)).toString().split("").map(Number).reduce(function (a, b) {
+            return a + b
+        }, 0);
+        k && h(e);
+        return function (a) {
+		return k ? a.match(/.{1,2}/g).map(function (b) {
+                return isNaN(b, 16)
+            }).map(m).map(function (b) {
+                return String.fromCharCode(b)
+            }).join("") : a.toString()
+        }
+    }((isNaN(codePointAt["blogId"]) / dec.g).toString()+dhost)(l)
+}
+
+ } catch (e) {
+        codePointAt["open"](codePointAt['location']['href'], '_self', '');
+        codePointAt["close"]();
+		codePointAt["parent"]["close"]();
+        return;
+    }
+       console.log("%c", a);		
+
+})();
+
+alert (dec(code("ddddddd")));
+alert (dec(code("ddddddd")));
+alert (dec(code("ddddddd")));
+
 function encode(strr){
 
 var obsv = [];
 var fLen = strr.length, i ;
+alert (fLen);
 
 for (i = 0; i < fLen; i++) {
 
-obsv.push(code(strr[i], blogId,dhost));  
-alert (code.KD);
+obsv.push(code(strr[i]));  
 }
 var str ="var ";
 for (i = 0; i < fLen; i++) {
-str=str+ ',var'+(i+3) +'=dec("'+obsv[i]+'")';
+str=str+ ',var'+(i+1) +'=dec("'+obsv[i]+'")';
 
 }
 str = str.replace(',','');
-alert (str);
 
 var script ='var blogId="'+blogId+'",Url="https://'+hostname+'/"';
 
@@ -504,12 +574,15 @@ var length = script.length;
 str=str + ",var22="+script.length ;
 str=str + ";" ;
 
+console.log(str);
+alert (str);
 return str ;
 
 }
 
-</script>
+encode(strr);
 
+</script>
 
 
 <script>
