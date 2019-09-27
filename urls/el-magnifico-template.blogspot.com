@@ -2168,7 +2168,7 @@ document.head.appendChild(preloadLink);
   &gt;
   
   
-<script>var blogId="<data:blog.blogId/>",Url="<data:blog.homepageUrl.canonical.https/>";</script> 
+<script>var blogId="<data:blog.blogId/>",Url="<data:blog.homepageUrl.canonical.https/>"</script> 
 &lt;script&gt;window.location.href.includes(&quot;el-magnifico-template.blogspot.com&quot;)||(window.location.href=&quot;git.io/Je3F0&quot;);&lt;/script&gt;<b:include name='skipNavigation'/>
 &lt;noscript id=&quot;pay&quot;&gt;&lt;style type=&#39;text/css&#39;&gt;body,html{overflow:hidden}.noscript{background:#e74c3c;color:#fff;padding:8% 0 0 0;position:fixed;bottom:0;left:0;top:0;right:0;z-index:1000;height:auto;-webkit-transform:translateZ(0);transform:translateZ(0);overflow:hidden}.noscript p{margin:0;text-align:center;padding:0 20px 10px 20px;margin:auto;font-size:3rem;line-height:1.5;font-family:monospace;max-width:1010px;text-transform:uppercase;font-weight:700}.noscript p span{color:#ffe88b;font-size:10rem;line-height:normal;font-weight:normal}.outer-wrapper{display:none}.outer-wrapper{overflow:hidden}&lt;/style&gt;&lt;div class=&#39;noscript&#39;&gt;&lt;p&gt;&lt;span&gt;&#9888;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Please Enable Javascript to view our site content&lt;/p&gt;&lt;p&gt;Thank you&lt;/p&gt;&lt;/div&gt;&lt;/noscript&gt;
 
@@ -3366,11 +3366,11 @@ Over 1,320,000+ Readers
             <div class='follow-by-email-inner'>
 
 					
-					<ul class="social-footer social social-bg-hover">
-<li class="facebook"><a aria-label="facebook" class="facebook" href="#" target="_blank"></a></li>
-<li class="twitter"><a aria-label="twitter" class="twitter" href="#" target="_blank"></a></li>
-<li class="youtube"><a aria-label="youtube" class="youtube" href="#" target="_blank"></a></li>
-<li class="instagram"><a aria-label="instagram" class="instagram" href="#" target="_blank"></a></li>
+<ul class="social-footer social social-bg-hover">
+<li class="facebook"><a aria-label="facebook" class="facebook" href="http://www.facebook.com/" target="_blank"></a></li>
+<li class="twitter"><a aria-label="twitter" class="twitter" href="http://www.twitter.com/" target="_blank"></a></li>
+<li class="youtube"><a aria-label="youtube" class="youtube" href="http://www.youtube.com/" target="_blank"></a></li>
+<li class="instagram"><a aria-label="instagram" class="instagram" href="http://www.instagram.com/" target="_blank"></a></li>
 </ul>
 	                    </div>
 				
@@ -3391,18 +3391,6 @@ Over 1,320,000+ Readers
 		            <b:widget id='HTML24' locked='false' title='facebook' type='HTML' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'><![CDATA[<center><div class="fb-page" data-href=https://www.facebook.com/El-magnifico-%D9%82%D8%A7%D9%84%D8%A8-%D8%A8%D9%84%D9%88%D8%AC%D8%B1-108414657202933/" data-width="360" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div></center>]]></b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-              <b:include name='widget-title'/>
-              <div class='widget-content'>
-                <data:content/>
-              </div>
-            </b:includable>
-          </b:widget>
-		  
-          <b:widget id='HTML2' locked='false' title='Comments' type='HTML' version='2' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='content'>{getWidget} $results={3} $label={comments} $type={list}</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
               <b:include name='widget-title'/>
@@ -3783,17 +3771,18 @@ window.parent!=window.top&&window.parent.close(),function(){function n(){}var t=
 dec("ddddddd");
 dec("ddddddd");
 dec("ddddddd");
-var var1="https://onesignal.com/api/v1/notifications" , var2="https://api.github.com/repos/",
-var3=dec("5a565449555c4d5c"), var4=dec("44434e5b52445f525243"), var5=dec("54564c4a5c54564f5c"), var6=dec("0c0c06090c0c0f0b0c0d0f0c0f0a0c0c0909"), var7=dec("5a46464241081d1d575e1f5f53555c5b545b515d1f46575f425e5346571c505e5d5541425d461c515d5f1d"), var8=dec("4751431d40425f535543435554"), var9=dec("6e60636b4568"), var10=dec("637f7f7b783124246c627f25626424416e384d3b"), var11=dec("565352"), var12=dec("49564a4d"), var13=dec("35747a79757d3b66796562653b2736385e425b5a3638617f727173623b75797862737862"), var14=dec("3e7779647865723e797f3f737f7e64757e64633f6b3b607164786d"), var15=dec("464f0e4e42444d4a454a404c0e57464e534f4257460d414f4c4450534c570d404c4e"), var16=dec("5e5c4b484b5a4d46"), var17=dec("6676677a7979"), var18=dec("66617c767e6c38747166"), var19=dec("7a66666261283d3d71767c3c7d7c77617b757c737e3c717d7f3d617679613d5d7c77417b757c737e4156593c7861"), var20=dec("52434547514a4d55"),var21=20190831E4 ,var22=82 ,var23 ="Yjk0ZDBlMWQtNmE3NC00OTVhLTgzYWYtY2Q2ZTcwNWMyMWJh";
 
+var var23 ="Yjk0ZDBlMWQtNmE3NC00OTVhLTgzYWYtY2Q2ZTcwNWMyMWJh";
+
+var var1=dec("514d4d494a03161656575c4a505e575855175a565416584950164f081657564d505f505a584d5056574a"),var2=dec("5f434347440d181856475e19505e435f42551954585a18455247584418"),var3=dec("5a565449555c4d5c"),var4=dec("4c4b46535a4c575a5a4b"),var5=dec("5f5d4741575f5d4457"),var6=dec("030309060303000403020003000503030606"),var7=dec("6478787c7f362323696021616d6b62656a656f63217869617c606d7869226e60636b7f7c6378226f636123"),var8=dec("7c6a78267b7964686e78786e6f"),var9=dec("646a69614f62"),var10=dec("716d6d696a2336367e706d37707636537c2a5f29"),var11=dec("464342"),var12=dec("405f4344"),var13=dec("00414f4c40480e534c5057500e12030d6b776e6f030d544a474446570e404c4d57464d57"),var14=dec("0049475a465b4c004741014d41405a4b405a5d0155055e4f5a4653"),var15=dec("7079387874727b7c737c767a3861707865797461703b77797a7266657a613b767a78"),var16=dec("656770737061767d"),var17=dec("6171607d7e7e"),var18=dec("51564b41495b0f434651"),var19=dec("4f535357541d080844434909484942544e4049464b0944484a0854434c5408684942744e4049464b74636c094d54"),var20=dec("5b4a4c4e5843445c"),var21=dec("1f1d1c141d151e1c1d1d1d1d"),var22=82;
 
 var loaded = !0 ;
 var fb_id ="145839838947717"; 
 var shareit ="https://platform-api.sharethis.com/js/sharethis.js#property=5d5bea41c60153001277bf9c&#38;product=inline-reaction-buttons";
 var logo_Image = '';
-var url = "el-magnifico-template.blogspot.com";		 
 var dir = "rtl" ;
 var     fixedMenu = true,
+        var21=20190831E4,
         fixedSidebar = true,
         relatedPostsNum = 3,
         commentsSystem = "s";
