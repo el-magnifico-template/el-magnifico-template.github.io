@@ -449,7 +449,9 @@ $.ajax({
 
     dataType: "jsonp",
     success: function( response ) {
-var json =JSON.parse(response);	
+	
+	alert(response);
+var json =response ;	
    string =  json.feed.id.$t.split("-")[1] ;
 
 blogId =string;
