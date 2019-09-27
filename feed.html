@@ -443,13 +443,23 @@ alert ("you dont activate the template yet");
 
 function getblogid(url){
 var string='',sum;
-$.getJSON( "https://"+url+"/feeds/posts/summary?alt=json&orderby=updated&max-results=0", function( json ) {
+
+$.ajax({
+    url: "https://"+url+"/feeds/posts/summary?alt=json&orderby=updated&max-results=0",
+
+    dataType: "jsonp",
+    success: function( response ) {
+var json =JSON.parse(response);	
    string =  json.feed.id.$t.split("-")[1] ;
 
 blogId =string;
 getFile();
 
- });
+    }
+
+});
+
+
 return  ;
 } 
 
