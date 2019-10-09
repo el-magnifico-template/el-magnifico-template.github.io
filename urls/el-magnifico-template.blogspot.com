@@ -4,7 +4,7 @@
 <b:attr cond='data:blog.locale.country == &quot;AM&quot;' name='amp' value='amp'/>
 <b:attr expr:value='data:view.isSingleItem ? &quot;og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#&quot; : &quot;og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#&quot;' name='prefix'/>
 
-<b:comment>1,2,3,5,7,8,9,7,7,7,7,7,7,7,7,7,7,7,7,7,7</b:comment>
+<b:comment>sams,Blog,true,true,true,disqus,sams,10,sams,sams,sams,sams,sams,sams,sams,sams,sams,true,true,true,true,true,true,true,true,true,true,sams,sams,sams,true,true,true,sams,true</b:comment>
 
 &lt;head&gt;&lt;!-- <head/> --&gt;
 &lt;meta charset=&#39;utf-8&#39;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,minimum-scale=1,initial-scale=1&quot;/&gt;
