@@ -1,0 +1,228 @@
+[
+  
+  {
+    "title"    : "Welcome to Jekyll!",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/welcome-to-jekyll",
+    "date"     : "2019-02-04 00:00:00 +0100",
+    "desc"     : "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated."
+    } ,
+    
+  {
+    "title"    : "Powerful things you can do with the Markdown editor",
+    "category" : "",
+    "tags"     : "summer",
+    "url"      : "/powerful-things-markdown-editor",
+    "date"     : "2019-02-03 00:00:00 +0100",
+    "desc"     : "There are lots of powerful things you can do with the Markdown editor. If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!"
+    } ,
+    
+  {
+    "title"    : "The first mass-produced book to deviate from a rectilinear format",
+    "category" : "",
+    "tags"     : "featured",
+    "url"      : "/first-mass-produced",
+    "date"     : "2019-02-02 00:00:00 +0100",
+    "desc"     : "The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter."
+    } ,
+    
+  {
+    "title"    : "Education must also train one for quick, resolute and effective thinking.",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/education",
+    "date"     : "2019-02-01 00:00:00 +0100",
+    "desc"     : "There are lots of powerful things you can do with the Markdown editor"
+    } ,
+    
+  {
+    "title"    : "Accumulated experience of social living",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/acumulated-experience",
+    "date"     : "2019-01-30 00:00:00 +0100",
+    "desc"     : "The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes."
+    } ,
+    
+  {
+    "title"    : "About Bundler",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/about-bundler",
+    "date"     : "2019-01-29 00:00:00 +0100",
+    "desc"     : "gem install bundler installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:"
+    } ,
+    
+  {
+    "title"    : "We all wait for summer",
+    "category" : "",
+    "tags"     : "featured",
+    "url"      : "/we-all-wait-for-summer",
+    "date"     : "2019-01-28 00:00:00 +0100",
+    "desc"     : "This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end."
+    } ,
+    
+  {
+    "title"    : "Tree of Codes",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/tree-of-codes",
+    "date"     : "2019-01-27 00:00:00 +0100",
+    "desc"     : "The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter."
+    } ,
+    
+  {
+    "title"    : "Red Riding Hood",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/red-riding",
+    "date"     : "2019-01-26 00:00:00 +0100",
+    "desc"     : "The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter."
+    } ,
+    
+  {
+    "title"    : "Press and education",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/press-and-education",
+    "date"     : "2019-01-25 00:00:00 +0100",
+    "desc"     : "Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction."
+    } ,
+    
+  {
+    "title"    : "Powerful things you can do with the Markdown editor",
+    "category" : "",
+    "tags"     : "featured",
+    "url"      : "/powerful-things-markdown-editor",
+    "date"     : "2019-01-24 00:00:00 +0100",
+    "desc"     : "There are lots of powerful things you can do with the Markdown editor"
+    } ,
+    
+  {
+    "title"    : "Options for creating a new site with Jekyll",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/options-for-creating-new-site-with-jekyll",
+    "date"     : "2019-01-23 00:00:00 +0100",
+    "desc"     : "jekyll new &lt;PATH&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called myblog. Here are some additional details:"
+    } ,
+    
+  {
+    "title"    : "Never stopped worrying or loving the bomb",
+    "category" : "",
+    "tags"     : "featured",
+    "url"      : "/never-stopped-worrying-never-loved-bomb",
+    "date"     : "2019-01-22 00:00:00 +0100",
+    "desc"     : "I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them."
+    } ,
+    
+  {
+    "title"    : "Is Intelligence Enough",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/is-intelligence-enough",
+    "date"     : "2019-01-21 00:00:00 +0100",
+    "desc"     : "Education must also train one for quick, resolute and effective thinking. To think incisively and to think for one’s self is very difficult. We are prone to let our mental life become invaded by legions of half truths, prejudices, and propaganda. At this point, I often wonder whether or not education is fulfilling its purpose. A great majority of the so-called educated people do not think logically and scientifically."
+    } ,
+    
+  {
+    "title"    : "Quick Start Guide",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/quick-start-guide",
+    "date"     : "2019-01-20 00:00:00 +0100",
+    "desc"     : "If you already have a full Ruby development environment with all headers and RubyGems installed (see Jekyll’s requirements), you can create a new Jekyll site by doing the following:"
+    } ,
+    
+  {
+    "title"    : "Markdown Example",
+    "category" : "",
+    "tags"     : "featured",
+    "url"      : "/markup-example",
+    "date"     : "2019-01-19 00:00:00 +0100",
+    "desc"     : "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something."
+    } ,
+    
+  {
+    "title"    : "What is Jekyll",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/customer-service",
+    "date"     : "2019-01-18 00:00:00 +0100",
+    "desc"     : "No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here."
+    } ,
+    
+  {
+    "title"    : "Could we reinvent the charm of old cities",
+    "category" : "",
+    "tags"     : "sticky",
+    "url"      : "/charm-old-cities",
+    "date"     : "2019-01-18 00:00:00 +0100",
+    "desc"     : "Bucharest’s history alternated periods of development and decline from the early settlements in antiquity until its consolidation as the national capital of Romania late in the 19th century. First mentioned as the “Citadel of București” in 1459, it became the residence of the famous Wallachian prince Vlad III the Impaler."
+    } ,
+    
+  {
+    "title"    : "Hello world!",
+    "category" : "",
+    "tags"     : "get, some, dope, tags",
+    "url"      : "/welcome-to-jekyll",
+    "date"     : "2018-01-01 22:16:01 +0000",
+    "desc"     : "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated."
+    } ,
+    
+  {
+    "title"    : "How I Rest From Work",
+    "category" : "",
+    "tags"     : "Holidays, Hawaii",
+    "url"      : "/how-i-rest-from-work",
+    "date"     : "2017-09-12 11:32:20 +0100",
+    "desc"     : "Fam locavore snackwave bushwick +1 sartorial. Selfies portland knausgaard synth. Pop-up art party marfa deep v pitchfork subway tile 3 wolf moon. Ennui pinterest tumblr yr, adaptogen succulents copper mug twee. Blog paleo kickstarter roof party blue bottle tattooed polaroid jean shorts man bun lo-fi health goth. Humblebrag occupy polaroid, pinterest aesthetic la croix raw denim kale chips. 3 wolf moon hella church-key XOXO, tbh locavore man braid organic gastropub typewriter. Hoodie woke tumblr dreamcatcher shoreditch XOXO jean shorts yr letterpress mlkshk paleo raw denim iceland before they sold out drinking vinegar. Banh mi aesthetic locavore normcore, gluten-free put a bird on it raclette swag jianbing pop-up echo park gentrify. Stumptown brooklyn godard tumeric ethical. Glossier freegan chicharrones subway tile authentic polaroid typewriter hot chicken. Thundercats small batch heirloom meggings."
+    } ,
+    
+  {
+    "title"    : "The Best Organizer Software",
+    "category" : "",
+    "tags"     : "Productivity, Software",
+    "url"      : "/the-best-organizer-software",
+    "date"     : "2017-09-11 22:00:00 +0100",
+    "desc"     : "Church-key blog messenger bag, selfies umami man braid mlkshk. Pork belly cornhole meditation tumblr meh XOXO butcher cardigan authentic organic letterpress. Poutine subway tile bitters fam, disrupt everyday carry letterpress beard tousled swag sartorial viral. Retro af 3 wolf moon heirloom, pork belly man bun DIY chillwave. Shoreditch ennui stumptown, photo booth tumeric PBR&amp;B direct trade coloring book marfa taxidermy. Gentrify brunch typewriter woke freegan. Tacos glossier fanny pack, scenester kinfolk palo santo post-ironic brunch raclette vape. Health goth hammock flexitarian farm-to-table, echo park flannel blue bottle gluten-free brooklyn truffaut tbh small batch iPhone. DIY PBR&amp;B four dollar toast tofu woke migas retro shoreditch disrupt yuccie YOLO vinyl man bun."
+    } ,
+    
+  {
+    "title"    : "How To Start Programming",
+    "category" : "",
+    "tags"     : "Programming, Learn",
+    "url"      : "/how-to-start-programming",
+    "date"     : "2017-09-11 22:00:00 +0100",
+    "desc"     : "Post-ironic jean shorts bushwick umami, synth beard austin hell of meh kitsch distillery sustainable plaid bitters. Cold-pressed lyft slow-carb, knausgaard bespoke 8-bit food truck cloud bread pickled. Taiyaki bitters trust fund heirloom craft beer single-origin coffee. Readymade fam vape blue bottle cold-pressed, flannel polaroid. Aesthetic four dollar toast semiotics af bicycle rights. Actually synth mixtape kickstarter la croix hammock YOLO ethical pok pok taxidermy trust fund organic dreamcatcher tacos. Franzen four loko man braid letterpress umami offal. Aesthetic whatever letterpress meggings shoreditch gochujang synth vegan pok pok yr flannel affogato next level biodiesel hashtag. Banjo vaporware lyft unicorn tumblr. Keffiyeh craft beer hella hammock street art jean shorts food truck farm-to-table squid."
+    } ,
+    
+  {
+    "title"    : "10 Tips To Improve Your Workflow",
+    "category" : "",
+    "tags"     : "Productivity, Workflow",
+    "url"      : "/10-tips-to-improve-your-workflow",
+    "date"     : "2017-09-11 22:00:00 +0100",
+    "desc"     : "Asymmetrical portland enamel pin af heirloom ramps authentic thundercats. Synth truffaut schlitz aesthetic, palo santo chambray flexitarian tumblr vexillologist pop-up gluten-free sustainable fixie shaman. Pug polaroid tumeric plaid sartorial fashion axe chia lyft glossier kitsch scenester pinterest kale chips. Blog etsy umami fashion axe shoreditch. Prism chambray heirloom, drinking vinegar portland paleo slow-carb. Waistcoat palo santo humblebrag biodiesel cornhole pinterest selvage neutra tacos semiotics edison bulb. Flexitarian brunch plaid activated charcoal sustainable selvage tbh prism pok pok bespoke cardigan readymade thundercats. Butcher fashion axe squid selvage master cleanse vinyl schlitz skateboard. Lomo shaman man bun keffiyeh asymmetrical listicle. Kickstarter trust fund fanny pack post-ironic wayfarers swag kitsch. Shaman pug kale chips meh squid."
+    } ,
+    
+  {
+    "title"    : "Conference on Javascript",
+    "category" : "",
+    "tags"     : "Js, Conference",
+    "url"      : "/conference-on-javascript",
+    "date"     : "2017-09-09 22:00:00 +0100",
+    "desc"     : "Jean shorts organic cornhole, gochujang post-ironic chicharrones authentic flexitarian viral PBR&amp;B forage wolf. Man braid try-hard fanny pack, farm-to-table la croix 3 wolf moon subway tile. Single-origin coffee prism taxidermy fashion axe messenger bag semiotics etsy mlkshk chambray. Marfa lumbersexual meditation celiac. Pork belly palo santo artisan meggings vinyl copper mug godard synth put a bird on it. Cloud bread pop-up quinoa, raw denim meditation 8-bit slow-carb. Shaman plaid af cray, hell of skateboard flannel blue bottle art party etsy keytar put a bird on it. Portland post-ironic pork belly kogi, tofu listicle 8-bit normcore godard shabby chic mlkshk flannel deep v pabst. Pork belly kinfolk fingerstache lo-fi raclette. Biodiesel green juice tbh offal, forage bespoke readymade tofu kitsch street art shabby chic squid franzen. Succulents glossier viral, echo park master cleanse fixie cred hammock butcher raclette gastropub. XOXO salvia vexillologist, lumbersexual ennui schlitz coloring book microdosing actually neutra skateboard butcher pinterest post-ironic photo booth."
+    } ,
+    
+  {
+    "title"    : "Welcome to Jekyll!",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/welcome-to-jekyll",
+    "date"     : "2017-04-06 11:32:20 +0100",
+    "desc"     : "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated."
+    } 
+    
+  ]

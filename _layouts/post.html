@@ -1,0 +1,158 @@
+---
+layout: default
+type: item post
+
+---
+
+
+
+<!-- Content Wrapper -->
+<div id='content-wrapper'>
+<div class='container row-x1'>
+<!-- Main Wrapper -->
+<main id='main-wrapper'>
+
+<div class='main section' id='main'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container item-post-wrap'>
+<article class='blog-post  item-post'>
+<div class='item-post-inner'>
+<div class='item-post-padd'>
+<div class='entry-header blog-entry-header has-meta'>
+<nav id='breadcrumb'><a class='home' href='/'>Home</a><em class='delimiter'></em>
+
+  {% for category in page.categories limit:1 %}
+    {% capture tag_name %}{{ category }}{% endcapture %}
+    
+    <a class='label'  href='/tags#{{ tag_name }}'>{{ tag_name }}</a>
+
+      {% endfor %}
+
+</nav>
+<h1 class='entry-title'>
+{{ page.title }}
+</h1>
+
+
+<div class='entry-meta'>
+<span class='entry-author'>{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span>
+<span class='entry-time'><time class=' timeago published' datetime='{{ page.date | date_to_xmlschema }}'>{{ page.date | date: "%B %-d, %Y" }}</time></span>
+<span class='entry-comments-link'><a href='#comments'>1
+Commentaires</a></span>
+<span class='entry-readTime' id='entry-readTime'></span>
+<span class='entry-view' id='entry-view'></span>
+
+
+</div>
+</div>
+<div class='clearfix'></div>
+<div id='toc_container'>
+<div id='toc_list' onclick='if (document.getElementById(&#39;toc&#39;).style.display === &#39;none&#39;) { document.getElementById(&#39;toc&#39;).style.display = &#39;block&#39;; } else { document.getElementById(&#39;toc&#39;).style.display = &#39;none&#39;; }' role='button' tabindex='0'>
+contents
+<svg height='18' viewBox='0 0 24 24' width='18'><path d='M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z' fill='#000000'></path></svg></div>
+<div id='toc'>
+
+            {% include toc.html html=content sanitize=true   ordered=true %}
+
+</div>
+</div>
+<div id='before-ad'></div>
+
+<div class='post-body entry-content' id='post-body'>
+<!-- 	    {{page.content | markdownify}} -->
+
+	    
+	    {% include anchor_headings.html html=content %}
+
+</div>
+
+
+
+
+
+<div class='content-post' id='pager-body-out'></div>
+
+
+
+
+<div class="post-nav">
+  {% if page.previous.url %}
+    <a class="blog-pager-newer-link" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="blog-pager-older-link" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+  {% endif %}
+</div>
+
+
+
+
+<div id='after-ad'></div>
+<div class='entry-tags'>
+<span class='tags-label'>Tags</span>
+
+
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    
+    <a class='label-link' href='/tags#{{ tag_name }}'>{{ tag_name }}</a>
+
+      {% endfor %}
+
+
+
+</div>
+</div>
+<div class='post-share'>
+<div class='sharethis-inline-reaction-buttons' id='sharethis'></div>
+<div class='sharethis-inline-share-buttons'></div>
+</div>
+</div>
+<div class='post-footer'>
+<div id='related-wrap'>
+<div class='title-wrap related-title'>
+<h3>Ces posts pourraient vous intéresser</h3>
+<a class='more' href='https://el-magnifico-template.blogspot.com/search/label/%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7'>Plus d'éléments</a>
+</div>
+<div class='related-content'>
+<div class='related-tag' data-label='خرائط'></div>
+</div>
+</div>
+</div>
+</article>
+<div class='blog-post-comments'>
+<style>#disqus_thread>iframe[src*="ads-iframe"]{display:none!important}
+</style>
+
+<section class='comments threaded' data-embed='true' data-num-comments='1' id='comments'>
+<a name='comments'></a>
+<div class='title-wrap comments-title'><h3 class='title'>1
+Commentaires</h3>
+</div>
+<div class='comments-content'>
+<div id='comment-holder'>
+ </div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Enregistrer un commentaire</h4>
+ 
+</div>
+</p>
+</section>
+</div>
+</div>
+
+            
+</div></div>
+         
+ 
+</main>
+ 
+
+    {% include sidebar.html %}  
+
+
+</div>
+</div>
+ 

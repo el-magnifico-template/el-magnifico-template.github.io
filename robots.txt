@@ -1,0 +1,9 @@
+---
+layout:
+---
+
+# robotstxt.org/
+
+User-agent: *
+
+Sitemap: {{ "sitemap.xml" | absolute_url }}

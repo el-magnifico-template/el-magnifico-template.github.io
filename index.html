@@ -1,23 +1,179 @@
-<!DOCTYPE html>
-<html>
-<body>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+---
+layout: default
+type: index home
+description: موقع عربي متخصص في برمجة تطبيقات اندرويد و الربح منها جافا كوتلن كما  يوفر
+  شرح لسورس كود التطبيقات مفتوحة المصدر و اخبار و كورسات متعلقة بالبرمجة تهم المطورين
+---
 
-<script>
-  /*
-  location.replace("https://el-magnifico-template.blogspot.com/p/template.html")
-  */
- Url = "https://el-magnifico-template.blogspot.com";
+
+<!-- Content Wrapper -->
+<div id='content-wrapper'>
+<div class='container row-x1'>
+
+
+	    {% include featured.html %}  
+
+
+
+<!-- Main Wrapper -->
+<main id='main-wrapper'>
+<div class='block-posts section' id='block-posts-1' name='Post Widgets 1'>
+
+
+
+<div class="widget HTML id-block1-Music show-ify" data-version="2" id="HTML13">
+<div class="widget-title title-wrap">
+<h3 class="title">Music</h3>
+<a class="more" href="/search/label/Music">Show more</a></div>
+<div class="widget-content"><div class="block-posts-1">
+
+
+{% for post in site.posts %}
+  {% if post.categories contains 'Foo' %}
+  
+  
+  <article class="block-item item-0"><div class="block-inner"><span class="entry-category">Learn</span><a class="entry-image-link before-mask" href="{{post.url | prepend: site.baseurl}}"><span class="entry-thumb lazy-ify" data-image="https://3.bp.blogspot.com/-Ix54dwtFW7g/WwXmgY2u2YI/AAAAAAAAALc/TyxuotfHQPARKnh6FRFZYRIVj-5GM3o7wCK4BGAYYCw/s72-c/mobile-phone-iphone-music-38295.jpeg" style="background-image:url(https://3.bp.blogspot.com/-Ix54dwtFW7g/WwXmgY2u2YI/AAAAAAAAALc/TyxuotfHQPARKnh6FRFZYRIVj-5GM3o7wCK4BGAYYCw/w328-h320-p-k-no-nu/mobile-phone-iphone-music-38295.jpeg)"></span></a><div class="entry-header entry-info"><h2 class="entry-title"><a href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a></h2><div class="entry-meta"><span class="entry-author">Templateify</span><span class="entry-time"><time class="published" datetime="2018-05-23T15:10:00.000-07:00">{{ post.date | date: "%B %-d, %Y" }}</time></span></div></div></div>
+</article>
+  {% endif %}
+{% endfor %}
+
+</div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="widget HTML id-grid1-Technology show-ify" data-version="2" id="HTML5">
+<div class="widget-title title-wrap">
+<h3 class="title">Technology</h3>
+<a class="more" href="/search/label/Technology">Show more</a></div>
+<div class="widget-content"><div class="grid-posts-1"><article class="grid-item item-0"><div class="entry-image"><a class="entry-image-link" href="https://magify-templateify.blogspot.com/2018/05/how-good-team-can-positively-influence.html"><span class="entry-thumb lazy-ify" data-image="https://3.bp.blogspot.com/-r-ygVD10n5g/WwYwdZqR5LI/AAAAAAAAAP8/VLtAGTTtm5UMUJVjx4n0RGk65NNR94DZQCK4BGAYYCw/s72-c/pexels-photo-1061588.jpeg" style="background-image:url(https://3.bp.blogspot.com/-r-ygVD10n5g/WwYwdZqR5LI/AAAAAAAAAP8/VLtAGTTtm5UMUJVjx4n0RGk65NNR94DZQCK4BGAYYCw/w215-h144-p-k-no-nu/pexels-photo-1061588.jpeg)"></span></a></div><div class="entry-header"><h2 class="entry-title"><a href="https://magify-templateify.blogspot.com/2018/05/how-good-team-can-positively-influence.html">How a good team can positively influence your business</a></h2><div class="entry-meta"><span class="entry-time"><time class="published" datetime="2018-05-25T20:17:00.000-07:00">May 25, 2018</time></span></div></div></article><article class="grid-item item-1"><div class="entry-image"><a class="entry-image-link" href="https://magify-templateify.blogspot.com/2018/05/drones-indispensable-tool-for.html"><span class="entry-thumb lazy-ify" data-image="https://2.bp.blogspot.com/-bbSZgFsgxCY/WwYoE1KWj-I/AAAAAAAAANU/ftMWR-D25iA2AaTZZfqQ-ykWTd9xpo0yQCK4BGAYYCw/s72-c/pexels-photo-336232.jpeg" style="background-image:url(https://2.bp.blogspot.com/-bbSZgFsgxCY/WwYoE1KWj-I/AAAAAAAAANU/ftMWR-D25iA2AaTZZfqQ-ykWTd9xpo0yQCK4BGAYYCw/w215-h144-p-k-no-nu/pexels-photo-336232.jpeg)"></span></a></div><div class="entry-header"><h2 class="entry-title"><a href="https://magify-templateify.blogspot.com/2018/05/drones-indispensable-tool-for.html">Drones an indispensable tool for professionals from different sectors</a></h2><div class="entry-meta"><span class="entry-time"><time class="published" datetime="2018-05-23T19:51:00.000-07:00">May 23, 2018</time></span></div></div></article><article class="grid-item item-2"><div class="entry-image"><a class="entry-image-link" href="https://magify-templateify.blogspot.com/2018/05/top-reasons-why-microsoft-discontinued.html"><span class="entry-thumb lazy-ify" data-image="https://4.bp.blogspot.com/-lcH_xWF5M7g/WwYltAKvl8I/AAAAAAAAANI/S9CmDOMhGIwBgHeSQGPqLHaf1Dxt7A4rgCK4BGAYYCw/s72-c/pexels-photo%25283%2529.jpg" style="background-image:url(https://4.bp.blogspot.com/-lcH_xWF5M7g/WwYltAKvl8I/AAAAAAAAANI/S9CmDOMhGIwBgHeSQGPqLHaf1Dxt7A4rgCK4BGAYYCw/w215-h144-p-k-no-nu/pexels-photo%25283%2529.jpg)"></span></a></div><div class="entry-header"><h2 class="entry-title"><a href="https://magify-templateify.blogspot.com/2018/05/top-reasons-why-microsoft-discontinued.html">Top Reasons Why Microsoft Discontinued Windows Phone</a></h2><div class="entry-meta"><span class="entry-time"><time class="published" datetime="2018-05-23T19:48:00.000-07:00">May 23, 2018</time></span></div></div></article></div></div>
+</div>
+
+
+
+</div>
+
+
+<div class='home-ad section' id='home-ads-1' name='Home ADS 1'><div class='widget HTML' data-version='2' id='HTML4'>
+<div class='widget-content'>
+<a class="ads-here" href="javascript:;">Responsive Advertisement</a>
+</div>
+</div></div>
+<div class='main section' id='main' name='Main Posts'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts-title title-wrap'><h3 class='title'>Latest Posts</h3><a class='more' href='/search'>Show more</a></div>
+<div class='blog-posts hfeed container index-post-wrap'>
+
+{% for post in paginator.posts %}
+
+<article class='blog-post hentry index-post post-0'>
+
+<div class='entry-image'>
+<span class='entry-category'>Business</span>
+<a class='entry-image-link' href='{{post.url | prepend: site.baseurl}}'>
+<img class='entry-thumb' scr='{% if post.img %}/img/{{ post.img }}{% else %}/{{ site.header-img }} {% endif %}'></img>
+</a>
+</div>
+<div class='entry-header'>
+<h2 class='entry-title'>
+<a class='entry-title-link' href='{{post.url | prepend: site.baseurl}}' >{{post.title}}</a>
+</h2>
+<div class='entry-meta'>
+<span class='entry-author'>{% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %}</span>
+<span class='entry-time'><time class='published' datetime='{{ post.date | date_to_xmlschema }}'>{{ post.date | date: "%B %-d, %Y" }}</time></span>
+</div>
+<p class='entry-excerpt excerpt'>{{ post.content | strip_html | truncatewords: 15 }}</p>
+</div>
+</article>
+
+
+{% endfor %}
+
+
+</div>
+
+<!-- Pager -->
+
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="material-icons md-18">&#xE5C4;</i> Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts <i class="material-icons md-18">&#xE5C8;</i></a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
+<div class='blog-pager container' id='blog-pager'>
+<a class='blog-pager-older-link load-more' data-load='https://magify-templateify.blogspot.com/search?updated-max=2018-05-23T20:03:00-07:00&amp;max-results=4' href='javascript:;' id='load-more-link'>
+Load More
+</a>
+<span class='loading'><span class='loader'></span></span>
+<span class='no-more load-more'>
+That is All
+</span>
+</div>
+
+            
+</div></div>
+<div id='custom-ads'>
+</div>
+<div class='home-ad section' id='home-ads-2' name='Home ADS 2'><div class='widget HTML' data-version='2' id='HTML8'>
+<div class='widget-content'>
+<a class="ads-here" href="javascript:;">Responsive Advertisement</a>
+</div>
+</div></div>
+<div class='block-posts section' id='block-posts-2' name='Post Widgets 2'><div class='widget HTML' data-version='2' id='HTML14'>
+<div class='widget-title title-wrap'>
+<h3 class='title'>Videos</h3>
+</div>
+<div class='widget-content'>
+{getBlock} $results={3} $label={Sports} $type={videos} $color={#2ecc71}
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML9'>
+<div class='widget-title title-wrap'>
+<h3 class='title'>Business</h3>
+</div>
+<div class='widget-content'>
+{getBlock} $results={4} $label={Business} $type={col-left} $color={#9b59b6}
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML11'>
+<div class='widget-title title-wrap'>
+<h3 class='title'>Bitcoin</h3>
+</div>
+<div class='widget-content'>
+{getBlock} $results={4} $label={Bitcoin} $type={col-right} $color={#f1c40f}
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML15'>
+<div class='widget-title title-wrap'>
+<h3 class='title'>Travel</h3>
+</div>
+<div class='widget-content'>
+{getBlock} $results={6} $label={Travel} $type={grid1} $color={#27ae60}
+</div>
+</div></div>
+</main>
+
+    {% include sidebar.html %}  
+
+
+</div>
+</div>
  
-  $.ajax({ url: Url+'/feeds/posts/summary?alt=json&orderby=updated&max-results=0', success: function(data) { 
-
-alert(data); 
-
-} });
-</script>
-
-</body>
-</html> 

@@ -1,7 +1,58 @@
 
-
-# Collections
 collections:
-  facefeed:
+  posts:
+    title: Posts
     output: true
-    permalink: /:name
+  uploads:
+    title: Uploads
+    output: true
+  pages:
+    title: pages
+    output: true
+
+
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+
+
+# Manifest settings (Used to make manifest.json)
+manifest_name: Web App Full Name
+manifest_short_name: Short Name # Appears in "Add to home screen" dialogues
+manifest_lang: en
+manifest_background_color: white
+manifest_short_name:
+manifest_display: standalone
+
+header-img: img/i-rest.jpg
+
+# You can find your shortname on the Settings page of your Disqus account
+disqus:
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:
+
+
+markdown: kramdown
+highlighter: rouge
+permalink: "/:title"
+paginate: 5
+exclude:
+- less
+- google29b6354e114fc919.html
+- node_modules
+- Gruntfile.js
+- package.json
+- README.md
+gems:
+- jekyll-paginate
+
+plugins: [jekyll-paginate]

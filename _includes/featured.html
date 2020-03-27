@@ -1,0 +1,33 @@
+<!-- Featured Wrapper -->
+
+
+<div id="featured-wrapper">
+<div class="featured container row-x1 section" id="featured" name="Featured Posts"><div class="widget HTML id-featured-recent show-ify" data-version="2" id="HTML3">
+<div class="widget-title">
+<h3 class="title">Featured Posts</h3>
+</div>
+<div class="widget-content"><div class="featured-posts">
+
+
+{% capture posts %}
+  {% for post in site.posts %}
+    |{{ post.view }}#{{ post.title }}#{{ post.url }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedposts = posts | split: '|' | sort % | reverse %}
+{% for post in sortedposts limit:4 %}
+    {% assign postitems = post | split: '#' %}
+    
+    
+     
+<article class="featured-item post item-{% increment var %}"><div class="featured-item-inner"><a class="entry-image-link before-mask" href="https://magify-templateify.blogspot.com/2018/05/how-good-team-can-positively-influence.html"><span class="entry-thumb lazy-ify" data-image="https://3.bp.blogspot.com/-r-ygVD10n5g/WwYwdZqR5LI/AAAAAAAAAP8/VLtAGTTtm5UMUJVjx4n0RGk65NNR94DZQCK4BGAYYCw/s72-c/pexels-photo-1061588.jpeg" style="background-image:url(https://3.bp.blogspot.com/-r-ygVD10n5g/WwYwdZqR5LI/AAAAAAAAAP8/VLtAGTTtm5UMUJVjx4n0RGk65NNR94DZQCK4BGAYYCw/w517-h402-p-k-no-nu/pexels-photo-1061588.jpeg)"></span></a><span class="entry-category">Business</span><div class="entry-header entry-info"><h2 class="entry-title"><a href="https://magify-templateify.blogspot.com/2018/05/how-good-team-can-positively-influence.html">{{ postitems[1] }}</a></h2><div class="entry-meta"><span class="entry-author">{{ postitems[0] }}</span><span class="entry-time"><time class="published" datetime="2018-05-25T20:17:00.000-07:00">May 25, 2018</time></span></div></div></div></article>
+
+{% endfor %}
+
+
+
+
+
+</div></div>
+</div></div>
+</div>

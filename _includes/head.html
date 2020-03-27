@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %}{{ site.name | escape }}{% unless page.tag or page.title %} - {{ site.description | escape }}{% endunless %}</title>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="manifest" href="manifest.json">
+
+    <link href="{{site.url}}{{ site.baseurl }}/img/favicon/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="{{site.url}}{{ site.baseurl }}/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32">
+    <link href="{{site.url}}{{ site.baseurl }}/img/favicon/android-icon-192x192.png" rel="icon" sizes="192x192">
+    <link href="{{site.url}}{{ site.baseurl }}/img/favicon/apple-icon-180x180.png" rel="apple-touch-icon-precomposed">
+    <meta content="{{site.url}}{{ site.baseurl }}/img/favicon/ms-icon-144x144.png" name="msapplication-TileImage">    {% include open_graph.html %}
+    {% include css.html %}
+
+	{% if page.css %}
+	
+	    {% include pagecss.html %}
+
+	
+	{% endif %}
+</head>
