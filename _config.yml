@@ -38,7 +38,8 @@ header-img: img/i-rest.jpg
 disqus: https-tellmemore-life
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-93038764-7
+
 
 
 markdown: kramdown
