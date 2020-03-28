@@ -16,10 +16,10 @@ var lazyLoadInstance = new LazyLoad({
 
 </script>
 
+ <script type="module">
+ 
+ import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 
- <script src="/js/upup.min.js"></script>
-  <script>
-    UpUp.start({
-      'content-url': 'offline.html' // show this page to offline users
-    });
-  </script>
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+ </script>
