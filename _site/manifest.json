@@ -2,7 +2,7 @@
   "lang": "en",
   "background_color": "#white",
   "name": "Web App Full Name",
-  "short_name": "",
+  "short_name": "tmm",
   "display": "standalone",
   "icons": [
     {
