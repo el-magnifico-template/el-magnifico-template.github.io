@@ -1,6 +1,6 @@
 {
   "lang": "en",
-  "start_url": "/",
+  "start_url": "./",
   "theme_color": "#3F51B5",
   "background_color": "",
   "name": "Your awesome title",
@@ -14,3 +14,4 @@
     }
   ]
 }
+
