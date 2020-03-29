@@ -25,10 +25,9 @@ github_username:  jekyll
 
 
 # Manifest settings (Used to make manifest.json)
-manifest_name: Web App Full Name
 manifest_short_name: Short Name # Appears in "Add to home screen" dialogues
 manifest_lang: en
-manifest_background_color: white
+manifest_background_color: #303F9F
 manifest_short_name: tmm
 manifest_display: standalone
 
@@ -41,6 +40,20 @@ disqus: https-tellmemore-life
 google_analytics: UA-93038764-7
 
 
+pwa:
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: js # Required
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+    - offline.html
+  precache_glob_ignores: # Optional
+    - sw-register.js
+    - "fonts/**/*"
+
 
 markdown: kramdown
 highlighter: rouge
@@ -52,8 +65,12 @@ exclude:
 - node_modules
 - Gruntfile.js
 - package.json
+- CNAME
 - README.md
 gems:
 - jekyll-paginate
+- jekyll-pwa-plugin
 
-plugins: [jekyll-paginate]
+
+plugins: 
+ - jekyll-paginate 

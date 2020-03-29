@@ -3,8 +3,10 @@ permalink: manifest.json
 ---
 {
   "lang": "{{ site.manifest_lang }}",
-  "background_color": "#{{ site.manifest_background_color }}",
-  "name": "{{ site.manifest_name }}",
+  "start_url": "/",
+  "theme_color": "#3F51B5",
+  "background_color": "{{ site.manifest_background_color }}",
+  "name": "{{ site.title }}",
   "short_name": "{{ site.manifest_short_name }}",
   "display": "{{ site.manifest_display}}",
   "icons": [

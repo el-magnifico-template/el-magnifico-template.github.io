@@ -38,7 +38,15 @@ type: item post
 <span class='entry-time'><time class=' timeago published' datetime='{{ page.date | date_to_xmlschema }}'>{{ page.date | date: "%B %-d, %Y" }}</time></span>
 <span class='entry-comments-link'><a href='#comments'>1
 Commentaires</a></span>
-<span class='entry-readTime' id='entry-readTime'></span>
+<span class='entry-readTime' id='entry-readTime'>{% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+{% if reading_time <= 1 %}
+  {% assign reading_time = '1' | append:' min read' %}
+{% else %}
+  {% assign reading_time = reading_time | append:' min read' %}
+{% endif %}
+{{reading_time}}
+</span>
+
 <span class='entry-view' id='entry-view'></span>
 
 
