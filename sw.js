@@ -5,8 +5,8 @@ importScripts('/cache-polyfill.js');
 const siteCacheName = 'mysiteCachev11';
 const dependenciesUrls = [
   "/favicon.ico",
-   "offline.html",
-   
+   "/offline.html",
+   "/index.html"
 ]
 
 self.addEventListener('install', (event) => {
