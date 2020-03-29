@@ -1,6 +1,6 @@
 ---
 ---
-importScripts('/cache-polyfill.js');
+// importScripts('/cache-polyfill.js');
 
 const siteCacheName = 'mysiteCachev11';
 const dependenciesUrls = [
