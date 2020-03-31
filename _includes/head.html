@@ -5,6 +5,13 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <title>{% if page.tag or page.title %}{% if page.tag %}{{ page.tag | escape }}{% else %}{{ page.title | escape }}{% endif %} - {% endif %}{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif %}{{ site.name | escape }}{% unless page.tag or page.title %} - {{ site.description | escape }}{% endunless %}</title>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% if page.path contains '_posts' %}
+  <link rel="amphtml" href="{{ page.id | prepend: '/YOURDIR' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
+{% endif %}
+    
+    
+    
+    
   <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl | prepend: site.url }}" />
 
     <link href="{{site.url}}{{ site.baseurl }}/img/favicon/favicon.ico" rel="icon" type="image/x-icon">
@@ -71,6 +78,5 @@
 	
 	{% include analytics.html %}
 
-<script data-ad-client="ca-pub-2618091328097350" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	
+ 	
 </head>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>My  awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>/</link>
     <atom:link href="http://localhost:4000/instantfeed.xml" rel="self" type="application/rss+xml" />
-    <updated>2020-03-29T13:25:11+01:00</updated>
+    <updated>2020-03-31T20:25:18+01:00</updated>
     <id>http://localhost:4000</id>
     <author>
       <name></name>
@@ -71,130 +71,6 @@
 
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
-
-                  
-                    <footer>
-                        <aside>
-                            
-                            Written by Amit Seal Ami, a Lecturer from Institute of Information Technology, University of Dhaka.</aside>
-                        <small>Copyright - Amit Seal Ami</small>
-                  </footer>
-                </article>
-              </body>
-            </html>
-        ]]>
-        </content:encoded>
-
-      </item>
-    
-      <item>
-        <title>Powerful things you can do with the Markdown editor</title>
-        <link>http://localhost:4000/powerful-things-markdown-editor</link>
-        <guid isPermaLink="true">http://localhost:4000/powerful-things-markdown-editor</guid>
-        <pubDate>Sun, 03 Feb 2019 00:00:00 +0100</pubDate>
-        <author></author>
-        
-          <description>&lt;p&gt;There are lots of powerful things you can do with the Markdown editor. If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!&lt;/p&gt;
-
-&lt;p&gt;As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using.&lt;/p&gt;
-
-&lt;h2 id=&quot;special-formatting&quot;&gt;Special formatting&lt;/h2&gt;
-
-&lt;p&gt;As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;del&gt;strike through&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;==highlight==&lt;/li&gt;
-  &lt;li&gt;*escaped characters*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;writing-code-blocks&quot;&gt;Writing code blocks&lt;/h2&gt;
-
-&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code class=&quot;highlighter-rouge&quot;&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.my-link {
-    text-decoration: underline;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you want to get really fancy, you can even add syntax highlighting using Rouge.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
-
-&lt;p&gt;The quick brown jumped over the lazy.&lt;/p&gt;
-
-&lt;p&gt;Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.&lt;/p&gt;
-
-&lt;h2 id=&quot;full-html&quot;&gt;Full HTML&lt;/h2&gt;
-
-&lt;p&gt;Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-</description>
-        
-        <content:encoded>
-            <![CDATA[
-                <!doctype html>
-                <html lang="en" prefix="op: http://media.facebook.com/op#">
-              <head>
-                <meta charset="utf-8">
-                <link rel="canonical" href="http://localhost:4000/powerful-things-markdown-editor">
-                <meta property="op:markup_version" content="v1.0">
-              </head>
-              <body>
-                <article>
-                  <header>
-                      <h1>Powerful things you can do with the Markdown editor</h1>
-                      
-                      <figure>
-                          <img src="https://images.unsplash.com/photo-1528784351875-d797d86873a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt=" Powerful things you can do with the Markdown editor ">
-                          <figcaption>Powerful things you can do with the Markdown editor</figcaption>
-                      </figure>
-                      
-                      <time class="op-published" dateTime="2019-02-03 00:00:00 +01">Sun, 03 Feb 2019 00:00:00 +0100</time>
-                      <time class="op-modified" dateTime=""></time>
-                  </header>
-                  
-                    <p>There are lots of powerful things you can do with the Markdown editor. If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
-
-<p>As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using.</p>
-
-<h2 id="special-formatting">Special formatting</h2>
-
-<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:</p>
-
-<ul>
-  <li><del>strike through</del></li>
-  <li>==highlight==</li>
-  <li>*escaped characters*</li>
-</ul>
-
-<h2 id="writing-code-blocks">Writing code blocks</h2>
-
-<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, <code class="highlighter-rouge">like this</code>. Larger snippets of code can be displayed across multiple lines using triple back ticks:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.my-link {
-    text-decoration: underline;
-}
-</code></pre></div></div>
-
-<p>If you want to get really fancy, you can even add syntax highlighting using Rouge.</p>
-
-<p><img src="/assets/images/8.jpg" alt="walking" /></p>
-
-<h2 id="reference-lists">Reference lists</h2>
-
-<p>The quick brown jumped over the lazy.</p>
-
-<p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.</p>
-
-<h2 id="full-html">Full HTML</h2>
-
-<p>Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:</p>
-
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
 
                   
                     <footer>
@@ -825,6 +701,72 @@
 
 <p>We must remember that intelligence is not enough. Intelligence plus character–that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living.</p>
 
+
+                  
+                    <footer>
+                        <aside>
+                            
+                            Written by Amit Seal Ami, a Lecturer from Institute of Information Technology, University of Dhaka.</aside>
+                        <small>Copyright - Amit Seal Ami</small>
+                  </footer>
+                </article>
+              </body>
+            </html>
+        ]]>
+        </content:encoded>
+
+      </item>
+    
+      <item>
+        <title>Options for creating a new site with Jekyll</title>
+        <link>http://localhost:4000/options-for-creating-new-site-with-jekyll</link>
+        <guid isPermaLink="true">http://localhost:4000/options-for-creating-new-site-with-jekyll</guid>
+        <pubDate>Wed, 23 Jan 2019 00:00:00 +0100</pubDate>
+        <author></author>
+        
+          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new &amp;lt;PATH&amp;gt;&lt;/code&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called &lt;code class=&quot;highlighter-rouge&quot;&gt;myblog&lt;/code&gt;. Here are some additional details:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To install the Jekyll site into the directory you’re currently in, run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; automatically initiates &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install the dependencies required. (If you don’t want Bundler to install the gems, use &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog --skip-bundle&lt;/code&gt;.)&lt;/li&gt;
+  &lt;li&gt;By default, the Jekyll site installed by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.&lt;/li&gt;
+  &lt;li&gt;We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog --blank&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;To learn about other parameters you can include with &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;, type &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new --help&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <content:encoded>
+            <![CDATA[
+                <!doctype html>
+                <html lang="en" prefix="op: http://media.facebook.com/op#">
+              <head>
+                <meta charset="utf-8">
+                <link rel="canonical" href="http://localhost:4000/options-for-creating-new-site-with-jekyll">
+                <meta property="op:markup_version" content="v1.0">
+              </head>
+              <body>
+                <article>
+                  <header>
+                      <h1>Options for creating a new site with Jekyll</h1>
+                      
+                      <figure>
+                          <img src="assets/images/13.jpg" alt=" Options for creating a new site with Jekyll ">
+                          <figcaption>Options for creating a new site with Jekyll</figcaption>
+                      </figure>
+                      
+                      <time class="op-published" dateTime="2019-01-23 00:00:00 +01">Wed, 23 Jan 2019 00:00:00 +0100</time>
+                      <time class="op-modified" dateTime=""></time>
+                  </header>
+                  
+                    <p><code class="highlighter-rouge">jekyll new &lt;PATH&gt;</code> installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called <code class="highlighter-rouge">myblog</code>. Here are some additional details:</p>
+
+<ul>
+  <li>To install the Jekyll site into the directory you’re currently in, run <code class="highlighter-rouge">jekyll new</code> . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.</li>
+  <li><code class="highlighter-rouge">jekyll new</code> automatically initiates <code class="highlighter-rouge">bundle install</code> to install the dependencies required. (If you don’t want Bundler to install the gems, use <code class="highlighter-rouge">jekyll new myblog --skip-bundle</code>.)</li>
+  <li>By default, the Jekyll site installed by <code class="highlighter-rouge">jekyll new</code> uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.</li>
+  <li>We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use <code class="highlighter-rouge">jekyll new myblog --blank</code></li>
+  <li>To learn about other parameters you can include with <code class="highlighter-rouge">jekyll new</code>, type <code class="highlighter-rouge">jekyll new --help</code>.</li>
+</ul>
 
                   
                     <footer>

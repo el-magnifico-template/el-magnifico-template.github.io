@@ -1,14 +1,22 @@
 ---
+layout: 
 ---
-// importScripts('/cache-polyfill.js');
-
+/*
 const offlinePageUrl = '/offline.html'
-const siteCacheName = '{{ site.title | replace: " ", "-"}}v1';
+const siteCacheName = '{{ site.title | replace: " ", "-"}}v1'
 const dependenciesUrls = [
+{% for page in site.pages %}
+{% if page.permalink %}
+"{{ page.permalink | prepend: site.baseurl }}",
+{% else %}
+"{{ page.url | prepend: site.baseurl }}",
+{% endif %}
+{% endfor %}
+  "/manifest.json",
   "/favicon.ico",
-   "/offline.html",
-   "/"
-]
+    "/",
+   "/img/online.svg"
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -92,3 +100,5 @@ self.addEventListener('message', (event) => {
     }) 
   }
 })
+
+*/

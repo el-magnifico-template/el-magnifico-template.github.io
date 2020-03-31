@@ -1,11 +1,33 @@
-// importScripts('/cache-polyfill.js');
-
-const siteCacheName = 'Your-awesome-titlev1';
+/*
+const offlinePageUrl = '/offline.html'
+const siteCacheName = 'My--awesome-titlev1'
 const dependenciesUrls = [
+
+
+"/404.html",
+
+
+
+"/about.html",
+
+
+
+"offline.html",
+
+
+
+"/pages/random",
+
+
+
+"tags",
+
+
+  "/manifest.json",
   "/favicon.ico",
-   "/offline.html",
-   "/"
-]
+    "/",
+   "/img/online.svg"
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -31,46 +53,63 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.open(siteCacheName).then(async (cache) => {
-      return cache.match(event.request).then((response) => {
-        return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
-          return response;
-        });
-      });
-    })
-  );
-});
+    caches
+    .open(siteCacheName)
+    .then((cache) => (
+      cache
+      .match(event.request)
+      .then((cacheResponse) => {
+        return cacheResponse || fetch(event.request)
+          .then((fetchResponse) => {
+            cache.put(event.request, fetchResponse.clone())
+            return fetchResponse
+          })
+      })
+      .catch(() => {
+        if (event.request.mode === 'navigate' ||  
+            (event.request.method === 'GET' && event.request.headers.get('accept').includes('text/html'))
+        ) {
+          return caches.match(offlinePageUrl)
+        }
+      })
+    ))
+  )  
+})
 
 
 
 
-// strategies from the offline cookbook by jake archibald
-// https://jakearchibald.com/2014/offline-cookbook/#serving-suggestions-responding-to-requests
 
 
 
-  // Promise.race is no good to us because it rejects if
-  // a promise rejects before fulfilling. Let's make a proper
-  // race function:
-  function promiseAny(promises) {
-    return new Promise((resolve, reject) => {
-      // make sure promises are all promises
-      promises = promises.map(p => Promise.resolve(p));
-      // resolve this promise as soon as one resolves
-      promises.forEach(p => p.then(resolve));
-      // reject if all promises reject
-      promises.reduce((a, b) => a.catch(() => b))
-        .catch(() => reject(Error("All failed")));
-    });
-  };
 
-  self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      promiseAny([
-        caches.match(event.request),
-        fetch(event.request)
-      ])
-    );
-  });
+self.addEventListener('message', (event) => {
+  const isARefresh = (event) => event.data.message === 'refresh'
 
+  const createDeleteOperationFor = (url, siteCache, requests) => siteCache
+    .delete(requests
+    .find((request) => request.url === url))
+
+  const createDeleteOperationsForImages = (siteCache, requests) => requests
+    .filter((request) => request.url.endsWith('.jpg') && request.url.includes('posts'))
+    .map((request) => siteCache.delete(request))
+
+  const sendRefreshCompletedMessageToClient = (event) => event.ports[0].postMessage({refreshCompleted: true})
+
+  if (isARefresh(event)) {
+    caches.open(siteCacheName).then((siteCache) => {
+      siteCache.keys().then((requests) => {
+        const deleteRequestToBeRefreshed = createDeleteOperationFor(event.data.url, siteCache, requests)
+        const deleteRequestsForImagesToBeRefreshed = createDeleteOperationsForImages(siteCache, requests)
+        Promise.all([
+          deleteRequestToBeRefreshed, 
+          ...deleteRequestsForImagesToBeRefreshed
+        ])
+          .then(() => sendRefreshCompletedMessageToClient(event))
+          .catch(() => sendRefreshCompletedMessageToClient(event))
+      })
+    }) 
+  }
+})
+
+*/

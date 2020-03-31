@@ -28,8 +28,7 @@ layout: compress
 </div>
     
     
-    // todo
-    	    {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
+    	    {{ content | replace: ' src' , ' data-src' | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
 
     	    
     	    
@@ -40,9 +39,13 @@ layout: compress
   	    
 </div>	    
 
+
+	    {% include mobile_menu.html %}  
+
     {% include g-a.html %}
 
     {% include buttomscript.html %}
+    
     
     
 </body>
