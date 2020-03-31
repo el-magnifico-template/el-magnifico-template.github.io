@@ -1,7 +1,7 @@
 ---
 layout: 
 ---
-/*
+
 const offlinePageUrl = '/offline.html'
 const siteCacheName = '{{ site.title | replace: " ", "-"}}v1'
 const dependenciesUrls = [
@@ -100,5 +100,3 @@ self.addEventListener('message', (event) => {
     }) 
   }
 })
-
-*/
