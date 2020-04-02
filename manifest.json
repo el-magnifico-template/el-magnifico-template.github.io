@@ -1,0 +1,17 @@
+{
+  "lang": "en",
+  "start_url": "./",
+  "theme_color": "#3F51B5",
+  "background_color": "",
+  "name": "My  awesome title",
+  "short_name": "tmm",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "img/144X144-icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
+
